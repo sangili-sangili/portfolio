@@ -162,11 +162,27 @@ const caseStudyData = {
     },
     whatsapp: {
         title: "Lead Management & WhatsApp Automation SaaS",
-        category: "MarTech SaaS • Event-Driven Architecture",
+        category: "MarTech SaaS • Litz Tech India Private Limited",
         challenge: "High volume of inbound leads from multi-channel marketing campaigns experienced slow response times and dropped leads due to lack of real-time sales agent dispatching and unreliable webhook consumption.",
         solution: "Built an event-driven webhook ingestion gateway integrated with WhatsApp Cloud Business API. Implemented cryptographic HMAC signature verification, message deduplication, and dynamic sales assignment round-robin logic based on agent availability and language. Configured an automated conversational bot for instant lead qualification and real-time conversion KPI dashboards.",
         metrics: "Achieved 99.9% webhook delivery reliability; reduced lead first-response time from hours to under 8 seconds; increased qualified lead conversion rates by 32%.",
         tech: ["React.js", "Node.js", "Express", "Webhooks", "WhatsApp Business API", "MySQL", "HMAC Auth", "REST APIs"]
+    },
+    hostel: {
+        title: "Multi-Tenant Hostel Management SaaS",
+        category: "Multi-Tenant SaaS • Litz Tech India Private Limited",
+        challenge: "Managing multi-property tenant lifecycle tracking, dynamic room allocation matrices, automated cyclical billing, and digital check-ins while strictly preventing cross-property tenant data leakage.",
+        solution: "Engineered tenant database isolation schemas in PostgreSQL and Laravel. Developed dynamic room inventory allocation matrices, automated monthly invoice generation with PDF receipt dispatch, and QR-based digital check-in/out verification workflows with granular Role-Based Access Control.",
+        metrics: "Zero cross-tenant data leaks; 100% automated invoicing pipeline saving 30+ administrative hours per month; instantaneous QR visitor and tenant validation.",
+        tech: ["Laravel", "React.js", "PostgreSQL", "JWT Authentication", "Role-Based Access Control (RBAC)", "REST APIs", "Bootstrap"]
+    },
+    school: {
+        title: "Smart School Management System",
+        category: "EdTech ERP • Litz Tech India Private Limited",
+        challenge: "Coordinating multi-tier administrative workflows across admissions, daily attendance logging, fee collections, exam scheduling, and instantaneous communication to thousands of parents with high deliverability.",
+        solution: "Built a centralized educational ERP on React.js, Next.js, and Node.js with MySQL. Designed a daily attendance tracking module with an automated SMS dispatch engine triggering instant alerts to parents for absent students. Implemented an end-to-end fee collection accounting ledger with fee receipt generation and term reconciliation dashboards.",
+        metrics: "Processed real-time attendance for thousands of students; automated instantaneous SMS absence alerts with 99.8% gateway delivery; reduced fee ledger manual reconciliation errors to zero.",
+        tech: ["React.js", "Next.js", "TypeScript", "Node.js", "MySQL", "SMS Gateway API", "REST APIs", "Bootstrap 5"]
     }
 };
 
