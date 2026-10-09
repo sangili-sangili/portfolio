@@ -115,7 +115,7 @@ const caseStudyData = {
         challenge: "Developing an end-to-end ethnic fashion commerce platform capable of handling complex weight and distance-based courier tariffs, personalized and anniversary coupon workflows, high-resolution media storage, and reliable transaction reconciliation.",
         solution: "Built on Laravel and MySQL with modular controllers and service layers. Implemented automated shipping fee algorithms factoring in destination zip codes and volumetric weights. Created customer-specific coupon engines supporting anniversary and birthday triggers. Integrated AWS S3 for scalable media bucket storage and CCAvenue payment gateway with cryptographic transaction checksums.",
         metrics: "100% automated order-to-shipping pipeline; zero checkout bottlenecks during peak festival sale traffic; seamless sub-second image asset loading via AWS S3.",
-        tech: ["Laravel", "PHP", "MySQL", "AWS S3", "CCAvenue Payment Gateway", "Bootstrap", "JavaScript", "AJAX", "REST APIs"]
+        tech: ["Laravel", "PHP", "MySQL", "AWS S3", "CCAvenue Payment Gateway", "Bootstrap", "JavaScript", "AJAX", "REST APIs", "On-Page SEO"]
     },
     tailee: {
         title: "Tailee — Geolocation-Driven E-Commerce Website",
@@ -158,7 +158,7 @@ const caseStudyData = {
         challenge: "Rapidly designing, developing, and deploying a visually stunning, responsive static web experience within a strict 24-hour turnaround window without compromising visual hierarchy or mobile ergonomics.",
         solution: "Developed using React.js and Tailwind CSS utility architecture. Built custom component abstractions, fluid typography scaling, optimized SVG icon sprites, and dark mode contrast ratios. Configured automated build pipelines for high-performance static asset hosting.",
         metrics: "Delivered from zero to live production in 1 day; 100% responsive across mobile, tablet, and ultra-wide screens; achieved 98+ Lighthouse performance rating.",
-        tech: ["React.js", "Tailwind CSS", "JavaScript (ES6+)", "Vite", "Responsive Design"]
+        tech: ["React.js", "Tailwind CSS", "JavaScript (ES6+)", "Vite", "Responsive Design", "Core Web Vitals", "On-Page SEO"]
     },
     whatsapp: {
         title: "Lead Management & WhatsApp Automation SaaS",
@@ -244,7 +244,7 @@ function copyEmailToClipboard(btn) {
     const email = 'sangilis423@gmail.com';
     navigator.clipboard.writeText(email).then(() => {
         const originalHtml = btn.innerHTML;
-        btn.innerHTML = '<i class="bi bi-check-lg text-success"></i> Copied!';
+        btn.innerHTML = '<i class="bi bi-check-lg text-success"></i> <span class="copy-text text-success">Copied!</span>';
         setTimeout(() => {
             btn.innerHTML = originalHtml;
         }, 2200);
